@@ -1,0 +1,20 @@
+#\DeclareLyXModule{KL Theorems}
+#DescriptionBegin
+# Modification of AMS theorems by KL
+#DescriptionEnd
+#Excludes: theorems-ams | theorems-std | theorems-starred
+#Category: theorems
+
+# Katharine Long, katharine.long@ttu.edu
+
+Format 66
+
+Requires	klstyle
+
+Counter theorem
+End
+
+Input theorems-order.inc
+Input KL-theorems.inc
+Input theorems-starred.inc
+Input theorems-proof.inc
