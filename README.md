@@ -5,6 +5,6 @@ Your local lyx configuration directory will probably be ~/.lyx on Linux and ~/Li
 I'll refer to this directory as ${LOCAL_LYX}
 
 ## Instructions
--- layout files (.module and .inc) go into ${LOCAL_LYX}/layouts
--- keyboard shortcuts files (.bind) go into ${LOCAL_LYX}/bind
+- layout files (.module and .inc) go into ${LOCAL_LYX}/layouts
+- keyboard shortcuts files (.bind) go into ${LOCAL_LYX}/bind
 
