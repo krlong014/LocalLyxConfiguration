@@ -1,0 +1,83 @@
+# -*- text -*-
+
+# --------------------------------------------------------------------------
+# Katharine Long's modifications to the default menu bindings
+# --------------------------------------------------------------------------
+
+# file menus.bind
+# This file is part of LyX, the document processor.
+# Licence details can be found in the file COPYING.
+
+# author Lars Gullik Bjønnes
+# author Jean-Marc Lasgouttes
+# author Michael Gerz
+# author Jürgen Vigna
+
+# Full author contact details are available in file CREDITS.
+
+# Key bindings for so-called "invisible" menus
+
+Format 4
+
+
+# --------------------------------------------------------------------------
+# Paragraph alignment 
+# --------------------------------------------------------------------------
+
+\bind "C-a l"			"paragraph-params \align left"
+\bind "C-a r"			"paragraph-params \align right"
+\bind "C-a c"			"paragraph-params \align center"
+
+
+# --------------------------------------------------------------------------
+# Paragraph style menu
+# --------------------------------------------------------------------------
+
+\bind "M-p ~S-0"		"layout Part"
+\bind "M-p ~S-1"		"layout Chapter"
+\bind "M-p ~S-2"		"layout Section"
+\bind "M-p ~S-3"		"layout Subsection"
+\bind "M-p ~S-4"		"layout Subsubsection"
+\bind "M-p ~S-5"		"layout Paragraph"
+\bind "M-p ~S-6"		"layout Subparagraph"
+\bind "M-p ~S-asterisk ~S-0"	"layout Part*"
+\bind "M-p ~S-asterisk ~S-1"	"layout Chapter*"
+\bind "M-p ~S-asterisk ~S-2"	"layout Section*"
+\bind "M-p ~S-asterisk ~S-3"	"layout Subsection*"
+\bind "M-p ~S-asterisk ~S-4"	"layout Subsubsection*"
+\bind "M-p ~S-asterisk ~S-5"	"layout Paragraph*"
+\bind "M-p ~S-asterisk ~S-6"	"layout Subparagraph*"
+\bind "M-p a"			"layout Abstract"
+\bind "M-p S-A"			"layout Author"
+\bind "M-p C-a"			"layout Address"
+\bind "M-p C-a"			"layout Right_Address"
+\bind "M-p b"			"layout Itemize"	# bulleted list
+\bind "M-p S-B"			"layout Bibliography"
+\bind "M-p c"			"layout LyX-Code"
+\bind "M-p S-C"			"layout Comment"
+\bind "M-p d"			"layout Description"
+\bind "M-p S-D"			"layout Date"
+\bind "M-p e"			"layout Enumerate"	# numbered list
+\bind "M-p f"			"layout ShortFoilhead"	# Foils!!
+\bind "M-p S-F"			"layout Foilhead"	# Foils!!
+\bind "M-p i"			"layout Itemize"	# bulleted list
+\bind "M-p l"			"layout List"
+\bind "M-p S-L"			"layout LaTeX"
+\bind "M-p n"			"layout Enumerate"	# numbered list
+\bind "M-p q"			"layout Quote"
+\bind "M-p S-Q"			"layout Quotation"
+\bind "M-p r"			"layout ShortRotatefoilhead"	# Foils!!
+\bind "M-p S-R"			"layout Rotatefoilhead"	# Foils!!
+\bind "M-p s"			"layout Standard"
+\bind "M-p t"			"layout Title"
+\bind "M-p space"		"drop-layouts-choice"
+\bind "M-p v"			"layout Verse"
+
+\bind "M-p Left"		"outline-out"
+\bind "M-p Right"		"outline-in"
+\bind "M-p Up"			"outline-up"
+\bind "M-p Down"		"outline-down"
+
+\bind "M-p M-Return"		"environment-split before"
+\bind "M-p Return"		"command-alternatives environment-split ; environment-split previous"
+\bind "M-p S-Return"		"environment-split outer"

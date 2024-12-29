@@ -1,0 +1,94 @@
+
+# --------------------------------------------------------------------
+# Katharine Long's key bindings. 
+# --------------------------------------------------------------------
+
+Format 5 # Not sure what this does; it's not documented anywhere I can find
+
+
+# ---------------------------------------------------------------------
+## Page break
+# ---------------------------------------------------------------------
+
+\bind "F9" "newpage-insert"
+
+# ---------------------------------------------------------------------
+## Render
+# ---------------------------------------------------------------------
+
+\bind "F10" "buffer-export pdf2"
+
+# ---------------------------------------------------------------------
+## Fonts
+# ---------------------------------------------------------------------
+
+\bind "C-e" "font-emph"
+\bind "C-b" "font-bold"
+\bind "C-M-b" "font-boldsymbol"
+\bind "C-T" "font-typewriter"
+
+\bind "C-u" "accent-umlaut"
+
+# ---------------------------------------------------------------------
+# Enter math mode 
+# ---------------------------------------------------------------------
+
+\bind "C-m" "math-mode"
+\bind "C-S-M" "math-display"
+\bind "C-S-m" "math-display"
+\bind "M-M-n"			"command-sequence math-display; math-number-toggle;"
+
+
+# ---------------------------------------------------------------------
+# Writing files 
+# ---------------------------------------------------------------------
+
+\bind "M-s"			"buffer-write"
+\bind "M-S-S"			"buffer-write-as"
+
+
+# ---------------------------------------------------------------------
+# Editing
+# ---------------------------------------------------------------------
+
+# -- Copy/Cut/Paste/Undo/Redo
+\bind "M-c"			"copy"
+\bind "M-x"			"cut"
+\bind "M-v"			"paste"
+\bind "M-z"			"undo"
+\bind "M-y"			"redo"
+
+# -- Newlines, paragraph break, etc
+\bind "C-Return"		"paragraph-break inverse"
+\bind "M-Return"		"newline-insert newline"
+\bind "M-S-Return"		"newline-insert linebreak"
+
+# -- Delete to end of line
+\bind "M-k"			"line-delete-forward"
+
+# -- insert space 
+\bind "M-space"			"command-alternatives math-space ; space-insert protected"
+
+# ---------------------------------------------------------------------
+# ERT (for native LaTeX code)
+# ---------------------------------------------------------------------
+
+\bind "C-l"			"ert-insert"		# 'l' for LaTeX
+
+
+# ---------------------------------------------------------------------
+# Zoom/unzoom
+# ---------------------------------------------------------------------
+
+\bind "M-equal"			"buffer-zoom-in"
+\bind "M-plus"			"buffer-zoom-in"
+\bind "M-minus"			"buffer-zoom-out"
+
+
+# ---------------------------------------------------------------------
+# Include specialized files
+# ---------------------------------------------------------------------
+
+\bind_file krl-menus.bind
+\bind_file krl-math.bind
+\bind_file latinkeys.bind

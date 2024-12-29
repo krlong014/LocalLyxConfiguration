@@ -1,0 +1,109 @@
+# --------------------------------------------------------------------
+# Katharine Long's math key bindings. 
+# These are a mix of the default math bindings, Bo Peng's Greek 
+# letter bindings, and some of my own.
+# --------------------------------------------------------------------
+
+Format 5 # Not sure what this does; it's not documented anywhere I can find
+
+#--------------------------------------------------------------------
+# Delimiters
+#--------------------------------------------------------------------
+
+# --- Two-sided 
+
+\bind "M-m braceleft"      "math-delim { }"
+\bind "M-m ~S-parenleft"        "math-delim ( )"
+\bind "M-m ~S-bracketleft" "math-delim [ ]"
+\bind "M-m ~S-braceleft"        "math-delim { }"
+\bind "M-m ~S-bar"      "math-delim | |"
+\bind "C-backslash" "math-delim Vert Vert"
+
+# --- One-sided
+\bind "C-S-bar" "math-delim . |"
+
+
+#--------------------------------------------------------------------
+# Relations
+#--------------------------------------------------------------------
+
+\bind "M-m equal"            "math-insert \approx"
+\bind "M-m minus"            "math-insert \sim"
+
+
+#--------------------------------------------------------------------
+# Fractions, roots, etc
+#--------------------------------------------------------------------
+          
+\bind "C-slash"            "math-insert \frac"           
+\bind "M-m f"              "math-insert \frac"           
+\bind "M-m s"              "math-insert \sqrt"         
+\bind "M-m r"              "math-insert \root"   
+
+#--------------------------------------------------------------------
+# Accents (bars, hats, etc)
+#--------------------------------------------------------------------
+
+\bind "M-m ~S-quotedbl"         "math-insert \ddot"
+\bind "M-m ~S-period"           "math-insert \dot"
+\bind "M-m h"                   "math-insert \hat"
+\bind "M-m ~M-~M-~S-ampersand"  "math-insert \tilde"
+\bind "M-m v"                   "math-insert \vec"
+\bind "M-m b"                   "math-insert \overline"
+\bind "M-m ~S-underscore"       "math-insert \underbar"
+
+
+
+#--------------------------------------------------------------------
+# Greek letters. Unmodified from Bo Peng's bindings. 
+#--------------------------------------------------------------------
+
+# First: Greek, start with C-g
+\bind "C-g a"              "math-insert \alpha"
+\bind "C-g b"              "math-insert \beta"
+\bind "C-g c"              "math-insert \chi"
+\bind "C-g d"              "math-insert \delta"
+\bind "C-g e"              "math-insert \epsilon"
+\bind "C-g f"              "math-insert \phi"
+\bind "C-g g"              "math-insert \gamma"
+\bind "C-g h"              "math-insert \eta"
+\bind "C-g i"              "math-insert \iota"
+\bind "C-g j"              "math-insert \varphi"
+\bind "C-g k"              "math-insert \kappa"
+\bind "C-g l"              "math-insert \lambda"
+\bind "C-g m"              "math-insert \mu"
+\bind "C-g n"              "math-insert \nu"
+\bind "C-g o"              "math-insert \omega"
+\bind "C-g p"              "math-insert \pi"
+\bind "C-g q"              "math-insert \theta"
+\bind "C-g r"              "math-insert \rho"
+\bind "C-g s"              "math-insert \sigma"
+\bind "C-g t"              "math-insert \tau"
+\bind "C-g u"              "math-insert \upsilon"
+\bind "C-g v"              "math-insert \vartheta"
+\bind "C-g w"              "math-insert \omega"
+\bind "C-g x"              "math-insert \xi"
+\bind "C-g y"              "math-insert \psi"
+\bind "C-g z"              "math-insert \zeta"
+
+\bind "C-g S-D"            "math-insert \Delta"
+\bind "C-g S-E"            "math-insert \varepsilon"
+\bind "C-g S-F"            "math-insert \Phi"
+\bind "C-g S-G"            "math-insert \Gamma"
+\bind "C-g S-I"            "math-insert \iota"
+\bind "C-g S-J"            "math-insert \varepsilon"
+\bind "C-g S-L"            "math-insert \Lambda"
+\bind "C-g S-O"            "math-insert \Omega"
+\bind "C-g S-P"            "math-insert \Pi"
+\bind "C-g S-Q"            "math-insert \Theta"
+\bind "C-g S-R"            "math-insert \varrho"
+\bind "C-g S-S"            "math-insert \Sigma"
+\bind "C-g S-T"            "math-insert \varsigma"
+\bind "C-g S-U"            "math-insert \Upsilon"
+\bind "C-g S-V"            "math-insert \varheta"
+\bind "C-g S-W"            "math-insert \Omega"
+\bind "C-g S-X"            "math-insert \Xi"
+\bind "C-g S-Y"            "math-insert \Psi"
+
+
+
